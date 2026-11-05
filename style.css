@@ -40,18 +40,25 @@ h2 span {
 
 nav {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
 }
 
 nav a {
     color: #ddd;
     text-decoration: none;
     font-size: 14px;
-    transition: 0.3s;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
     color: #c9a96e;
+    border-color: #c9a96e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.15);
 }
 
 .hero {
@@ -646,6 +653,89 @@ html[dir="rtl"] body {
 
     .copyright {
         font-size: 10px;
+    }
+
+}
+/* SERVICES SECTION */
+
+.services {
+    padding: 100px 10%;
+    background: #100f10;
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #f5f1eb;
+    margin: 25px 0 45px;
+    max-width: 650px;
+}
+
+.services h2 span {
+    color: #c9a96e;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 35px 25px;
+    border: 1px solid rgba(201, 169, 110, 0.2);
+    background: #151415;
+    transition: 0.4s ease;
+}
+
+.service-card:hover {
+    border-color: #c9a96e;
+    transform: translateY(-7px);
+}
+
+.service-card > span {
+    color: #c9a96e;
+    font-size: 13px;
+}
+
+.service-card h3 {
+    color: #f5f1eb;
+    font-size: 19px;
+    margin: 25px 0 15px;
+}
+
+.service-card p {
+    color: #aaa39a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+@media (max-width: 600px) {
+
+    .services {
+        padding: 65px 7%;
+    }
+
+    .services h2 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-card {
+        padding: 28px 22px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 1.8;
     }
 
 }
