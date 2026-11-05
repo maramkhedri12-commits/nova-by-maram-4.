@@ -7,6 +7,7 @@
     <title>NOVA by MARAM | Web Design</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,29 +16,50 @@
         <a href="#" class="logo">NOVA<span>.</span></a>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <a href="#home" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
+    <a href="#about" data-en="About" data-fr="À propos" data-ar="من نحن">About</a>
+    <a href="#projects" data-en="Projects" data-fr="Projets" data-ar="مشاريعي">Projects</a>
+    <a href="#contact" data-en="Contact" data-fr="Contact" data-ar="اتصل بي">Contact</a>
+
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">EN</button>
+        <button onclick="changeLanguage('fr')">FR</button>
+        <button onclick="changeLanguage('ar')">AR</button>
+    </div>
+</nav>
     </header>
 
     
 <section id="home" class="hero">
 
     <div class="hero-content">
-        <p class="intro">WEB DESIGN & DEVELOPMENT</p>
+        <p class="intro"
+   data-en="WEB DESIGN & DEVELOPMENT"
+   data-fr="CONCEPTION & DÉVELOPPEMENT WEB"
+   data-ar="تصميم وتطوير المواقع">
+   WEB DESIGN & DEVELOPMENT
+</p>
 
-        <h1>Creating digital<br>
-            experiences with <span>purpose.</span>
-        </h1>
+        <h1 data-en="Creating digital experiences with purpose."
+    data-fr="Créer des expériences numériques avec sens."
+    data-ar="نصنع تجارب رقمية هادفة.">
+    Creating digital<br>
+    experiences with <span>purpose.</span>
+</h1>
 
-        <p class="description">
-            Hi, I'm Maram. I design and build elegant,
-            modern websites with creativity and passion.
-        </p>
-
-        <a href="#projects" class="button">Explore my work</a>
+        <p class="description"
+   data-en="Hi, I'm Maram. I design and build elegant, modern websites with creativity and passion."
+   data-fr="Bonjour, je suis Maram. Je conçois et crée des sites web élégants et modernes avec créativité et passion."
+   data-ar="مرحباً، أنا مرام. أصمم وأطوّر مواقع إلكترونية أنيقة وعصرية بإبداع وشغف.">
+   Hi, I'm Maram. I design and build elegant,
+   modern websites with creativity and passion.
+</p>
+<a href="#projects" class="button"
+   data-en="Explore my work"
+   data-fr="Découvrir mes projets"
+   data-ar="اكتشف أعمالي">
+   Explore my work
+</a>
     </div>
 
     <div class="hero-image">
@@ -47,82 +69,174 @@
 </section>
 
     <section id="about" class="about">
-        <p class="section-label">01 / ABOUT ME</p>
-        <h2>A little about <span>me.</span></h2>
-
-        <p>
-            I'm Maram, an aspiring web developer passionate
-            about creating beautiful and meaningful digital
-            experiences. I'm currently learning and improving
-            my skills through personal projects.
-        </p>
+<p class="section-label"
+   data-en="01 / ABOUT ME"
+   data-fr="01 / À PROPOS DE MOI"
+   data-ar="01 / نبذة عني">
+   01 / ABOUT ME
+</p>
+<h2 data-en="A little about me."
+    data-fr="Un peu à propos de moi."
+    data-ar="قليل عني.">
+    A little about <span>me.</span>
+</h2>
+        <p data-en="I'm Maram, an aspiring web developer passionate about creating beautiful and meaningful digital experiences. I'm currently learning and improving my skills through personal projects."
+   data-fr="Je suis Maram, une future développeuse web passionnée par la création d'expériences numériques belles et significatives. J'apprends et améliore actuellement mes compétences à travers des projets personnels."
+   data-ar="أنا مرام، مطوّرة ويب مبتدئة شغوفة بإنشاء تجارب رقمية جميلة وهادفة. أتعلم وأطوّر مهاراتي حالياً من خلال مشاريعي الشخصية.">
+    I'm Maram, an aspiring web developer passionate
+    about creating beautiful and meaningful digital
+    experiences. I'm currently learning and improving
+    my skills through personal projects.
+</p>
     </section>
 
     
 <section class="skills">
-    <p class="section-label">02 / WHAT I DO</p>
-    <h2>My <span>skills.</span></h2>
-
+<p class="section-label"
+   data-en="02 / WHAT I DO"
+   data-fr="02 / MES COMPÉTENCES"
+   data-ar="02 / مهاراتي">
+   02 / WHAT I DO
+</p>
+<h2 data-en="My skills."
+    data-fr="Mes compétences."
+    data-ar="مهاراتي.">
+    My <span>skills.</span>
+</h2>
     <div class="skills-grid">
         <div class="skill">
             <span>01</span>
             <h3>HTML5</h3>
-            <p>Building the structure of websites.</p>
+<p data-en="Building the structure of websites."
+   data-fr="Créer la structure des sites web."
+   data-ar="بناء الهيكل الأساسي للمواقع الإلكترونية.">
+   Building the structure of websites.
+</p>
         </div>
 
         <div class="skill">
             <span>02</span>
             <h3>CSS3</h3>
-            <p>Creating beautiful and responsive designs.</p>
+<p data-en="Creating beautiful and responsive designs."
+   data-fr="Créer des designs élégants et adaptatifs."
+   data-ar="تصميم واجهات جميلة ومتجاوبة مع مختلف الشاشات.">
+   Creating beautiful and responsive designs.
+</p>
         </div>
 
         <div class="skill">
             <span>03</span>
             <h3>JavaScript</h3>
-            <p>Adding interaction and functionality.</p>
+<p data-en="Adding interaction and functionality."
+   data-fr="Ajouter de l'interactivité et des fonctionnalités."
+   data-ar="إضافة التفاعل والوظائف إلى المواقع.">
+   Adding interaction and functionality.
+</p>
         </div>
     </div>
 </section>
 
     <section id="projects" class="projects">
-    <p class="section-label">03 / SELECTED WORK</p>
-    <h2>My <span>projects.</span></h2>
-
+<p class="section-label"
+   data-en="03 / SELECTED WORK"
+   data-fr="03 / PROJETS SÉLECTIONNÉS"
+   data-ar="03 / أعمال مختارة">
+   03 / SELECTED WORK
+</p>
+<h2 data-en="My projects."
+    data-fr="Mes projets."
+    data-ar="مشاريعي.">
+    My <span>projects.</span>
+</h2>
     <div class="project-card">
         <div class="project-top">
-            <p class="project-number">01 — PERSONAL PROJECT</p>
+<p class="project-number"
+   data-en="01 — PERSONAL PROJECT"
+   data-fr="01 — PROJET PERSONNEL"
+   data-ar="01 — مشروع شخصي">
+   01 — PERSONAL PROJECT
+</p>
             <span class="project-category">WEB DEVELOPMENT</span>
         </div>
 
         <h3>MAISON ÉLÉGANCE</h3>
 
-        <p>
-            A luxury fashion e-commerce website concept
-            created with HTML, CSS and JavaScript.
-        </p>
+        <p data-en="A luxury fashion e-commerce website concept created with HTML, CSS and JavaScript."
+   data-fr="Un concept de boutique de mode de luxe créé avec HTML, CSS et JavaScript."
+   data-ar="تصميم متجر إلكتروني للأزياء الفاخرة باستخدام HTML وCSS وJavaScript.">
+    A luxury fashion e-commerce website concept
+    created with HTML, CSS and JavaScript.
+</p>
 
         <div class="project-footer">
             <span>HTML / CSS / JAVASCRIPT</span>
             <a href="https://maramkhedri12-commits.github.io/maison-elegance/"
-               target="_blank">Explore project ↗</a>
+   target="_blank"
+   data-en="Explore project ↗"
+   data-fr="Découvrir le projet ↗"
+   data-ar="اكتشف المشروع ↗">
+   Explore project ↗
+</a>
         </div>
     </div>
+    <div class="project-card">
+    <div class="project-top">
+<p class="project-number"
+   data-en="02 — CONCEPT PROJECT"
+   data-fr="02 — PROJET CONCEPTUEL"
+   data-ar="02 — مشروع تصوّري">
+   02 — CONCEPT PROJECT
+</p>
+        <span class="project-category">WEB DEVELOPMENT</span>
+    </div>
+
+    <h3>MAISON ÉCLAT</h3>
+
+    <p data-en="An elegant luxury fashion website concept designed with HTML, CSS and JavaScript."
+   data-fr="Un concept de site web élégant dédié à la mode de luxe, conçu avec HTML, CSS et JavaScript."
+   data-ar="مفهوم موقع إلكتروني أنيق للأزياء الفاخرة، مصمم باستخدام HTML وCSS وJavaScript.">
+    An elegant luxury fashion website concept
+    designed with HTML, CSS and JavaScript.
+</p>
+
+    <div class="project-footer">
+        <span>HTML / CSS / JAVASCRIPT</span>
+        <a href="رابط-مشروع-MAISON-ECLAT"
+   target="_blank"
+   data-en="Explore project ↗"
+   data-fr="Découvrir le projet ↗"
+   data-ar="اكتشف المشروع ↗">
+   Explore project ↗
+</a>
+    </div>
+</div>
 </section>
 
     <section id="contact" class="contact">
-    <p class="section-label">04 / GET IN TOUCH</p>
-
-    <h2>Let's create something <span>beautiful.</span></h2>
-
-    <p>
-        Have a project in mind?
-        Let's bring your ideas to life.
-    </p>
+<p class="section-label"
+   data-en="04 / GET IN TOUCH"
+   data-fr="04 / CONTACT"
+   data-ar="04 / تواصل معي">
+   04 / GET IN TOUCH
+</p>
+<h2 data-en="Let's create something beautiful."
+    data-fr="Créons quelque chose de beau."
+    data-ar="لنصنع شيئاً جميلاً معاً.">
+    Let's create something <span>beautiful.</span>
+</h2>
+    <p data-en="Have a project in mind? Let's bring your ideas to life."
+   data-fr="Vous avez un projet en tête ? Donnons vie à vos idées."
+   data-ar="هل لديك فكرة لمشروع؟ لنجعل أفكارك واقعاً.">
+    Have a project in mind? Let's bring your ideas to life.
+</p>
 
     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maramkhedri12@gmail.com"
    target="_blank"
-   class="button">
-    Let's talk ↗
+   class="button"
+   data-en="Let's talk ↗"
+   data-fr="Parlons-en ↗"
+   data-ar="لنتحدث ↗">
+   Let's talk ↗
 </a>
      
 
@@ -134,11 +248,17 @@
    <footer>
     <div class="footer-logo">NOVA<span>.</span></div>
 
-    <p>Designed & developed with purpose by Maram.</p>
-
-    <p class="copyright">
-        © 2026 NOVA by MARAM. All rights reserved.
-    </p>
+<p data-en="Designed & developed with purpose by Maram."
+   data-fr="Conçu et développé avec passion par Maram."
+   data-ar="صُمّم وطُوّر بشغف وإبداع بواسطة مرام.">
+   Designed & developed with purpose by Maram.
+</p>
+    <p class="copyright"
+   data-en="© 2026 NOVA by MARAM. All rights reserved."
+   data-fr="© 2026 NOVA by MARAM. Tous droits réservés."
+   data-ar="© 2026 NOVA by MARAM. جميع الحقوق محفوظة.">
+   © 2026 NOVA by MARAM. All rights reserved.
+</p>
 </footer>
 
 </body>
